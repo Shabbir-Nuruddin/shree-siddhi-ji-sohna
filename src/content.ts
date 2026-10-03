@@ -1,0 +1,90 @@
+import "@fontsource/eczar/600.css";
+import "@fontsource/eczar/700.css";
+import type { Site } from "./lib";
+
+export const SITE: Site = {
+  name: "Shree Siddhi Ji Restaurant",
+  sub: { en: "Veg North Indian & Chinese · Dhunela, Sohna Road", hi: "वेज नॉर्थ इंडियन और चाइनीज़ · धुनेला, सोहना रोड" },
+  banner: { en: "Not sure what to order? The owner will suggest something", hi: "क्या मंगाएं, समझ नहीं आ रहा? मालिक ख़ुद बताएंगे" },
+  phone: "919650728208",
+  phoneDisplay: "+91 96507 28208",
+  lat: 28.2908064,
+  lon: 77.0666758,
+  hours: [[11.5, 23.5], [11.5, 23.5], [11.5, 23.5], [11.5, 23.5], [11.5, 23.5], [11.5, 23.5], [11.5, 23.5]],
+  price: { en: "Under ₹200 per person", hi: "₹200 से कम प्रति व्यक्ति" },
+  theme: {
+    dark: true,
+    bg: "#090d1a",
+    bg2: "#0f1526",
+    panel: "#141b30",
+    ink: "#f5f1e6",
+    ink2: "#c5c3bb",
+    ink3: "#878a99",
+    line: "#232c48",
+    accent: "#f2c230",
+    onAccent: "#251b00",
+    display: "Eczar",
+    weight: 700,
+    upper: false,
+  },
+  scene: "thali",
+  align: "right",
+  hero: {
+    title: [
+      { en: "Chapatis like home,", hi: "घर जैसी रोटी," },
+      { en: "a thali that fills you up.", hi: "पेट भर दे ऐसी थाली।" },
+    ],
+    proof: {
+      en: "4.7 on Google from 81 reviews. Chana masala, paneer tikka, chaap and noodles, with the owner at the counter, on Sohna Road.",
+      hi: "गूगल पर 81 रिव्यू से 4.7। छोले, पनीर टिक्का, चाप और नूडल्स, काउंटर पर ख़ुद मालिक, सोहना रोड पर।",
+    },
+    fallback: "/img/p2.jpg",
+  },
+  marquee: ["Chana Masala", "Paneer Tikka", "Soya Chaap", "Kadhai Paneer", "Samosa", "Noodles", "Chilli Paneer", "Manchurian"],
+  dishes: {
+    title: { en: "The must-trys, according to guests", hi: "मेहमानों के हिसाब से ज़रूर खाएं" },
+    body: { en: "Every line is a real Google review.", hi: "हर लाइन असली गूगल रिव्यू है।" },
+    layout: "list",
+    items: [
+      { name: { en: "Curries & homemade chapatis", hi: "सब्ज़ी और घर जैसी रोटी" }, quote: "Fantastic food, chapatis are like homemade chapatis.", img: "/img/p2.jpg" },
+      { name: { en: "Chana Masala & Paneer Tikka", hi: "छोले और पनीर टिक्का" }, quote: "Chana masala is a must try. Tandoori paneer tikka and soya chaap are also a must try." },
+      { name: { en: "Samosa & Noodles", hi: "समोसा और नूडल्स" }, quote: "Samosa & noodles are a must try in snacks. Kadhai Paneer and Chana Masala tastes great." },
+      { name: { en: "Soya Chaap", hi: "सोया चाप" }, quote: "Best chaap ever had" },
+      { name: { en: "Indo-Chinese", hi: "इंडो-चाइनीज़" }, quote: "My favorites were the Chinese Manchurian, chili paneer, chili potatoes, and of course, the noodles. The portion sizes were more than enough for a single meal." },
+      { name: { en: "Paneer Butter Masala", hi: "पनीर बटर मसाला" }, quote: "paneer butter massala mouthwatering" },
+    ],
+  },
+  gallery: { title: { en: "", hi: "" }, layout: "strip", photos: [] },
+  feature: {
+    kind: "hosts",
+    title: { en: "The owner takes your order", hi: "ऑर्डर ख़ुद मालिक लेते हैं" },
+    body: { en: "Guests keep mentioning the personal recommendations.", hi: "मेहमान बार-बार उनकी सलाह का ज़िक्र करते हैं।" },
+    img: "/img/p1.jpg",
+    hosts: [
+      { name: "THE OWNER", quote: "Owner directly ensures customer satisfaction." },
+      { name: "THE OWNER", quote: "Nice food staff is very polite. Owner suggested good food" },
+      { name: "PERSONAL PICKS", quote: "had a lovely meal here last night, with personal recommendations right for us." },
+      { name: "THE STAFF", quote: "staff behaviour is very gud just like a family" },
+    ],
+  },
+  reviews: {
+    title: { en: "72 of 81 reviews are five stars", hi: "81 में से 72 रिव्यू पांच स्टार" },
+    rating: 4.7,
+    dist: [72, 3, 1, 0, 5],
+    quotes: [
+      { quote: "Delicious paneer tikka", stars: 5 },
+    ],
+  },
+  visit: {
+    title: { en: "Look for the red sign", hi: "लाल बोर्ड ढूंढिए" },
+    img: "/img/p3.jpg",
+    alt: "Red Shree Siddhi Ji Restaurant sign",
+    address: { en: "Near Shiv Mandir, Dhunela, Sohna Road", hi: "शिव मंदिर के पास, धुनेला, सोहना रोड" },
+    note: { en: "Open 11:30am to 11:30pm, every day.", hi: "हर दिन सुबह 11:30 से रात 11:30 बजे तक।" },
+  },
+  waHello: {
+    en: "Hi Shree Siddhi Ji Restaurant, I'd like to order. Items: , pickup / dine-in: , time: ",
+    hi: "नमस्ते श्री सिद्धि जी रेस्टोरेंट, मुझे ऑर्डर देना है। आइटम: , पिकअप / बैठकर: , समय: ",
+  },
+  order: ["feature", "dishes", "reviews", "visit"],
+};
