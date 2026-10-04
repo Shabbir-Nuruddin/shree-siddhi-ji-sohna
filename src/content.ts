@@ -27,7 +27,7 @@ export const SITE: Site = {
     weight: 700,
     upper: false,
   },
-  scene: "thali",
+  scene: "pour",
   align: "right",
   hero: {
     title: [
@@ -82,9 +82,32 @@ export const SITE: Site = {
     address: { en: "Near Shiv Mandir, Dhunela, Sohna Road", hi: "शिव मंदिर के पास, धुनेला, सोहना रोड" },
     note: { en: "Open 11:30am to 11:30pm, every day.", hi: "हर दिन सुबह 11:30 से रात 11:30 बजे तक।" },
   },
+  pour: { from: "pan", into: "kadhai", liquid: "#86401c", foam: "#a85f30", thick: 2, hot: true },
+  story: [
+    { kicker: { en: "The chana", hi: "छोले" }, title: { en: "Chana masala, a must.", hi: "छोले मसाला, ज़रूर खाइए।" }, quote: "Chana masala is a must try. Tandoori paneer tikka and soya chaap are also a must try." },
+    { kicker: { en: "The roti", hi: "रोटी" }, title: { en: "Chapatis like home.", hi: "घर जैसी रोटियां।" }, quote: "Fantastic food, chapatis are like homemade chapatis." },
+    { kicker: { en: "The owner", hi: "मालिक" }, title: { en: "The owner checks on you.", hi: "मालिक ख़ुद ध्यान रखते हैं।" }, quote: "Owner directly ensures customer satisfaction." },
+  ],
+  build: {
+    title: { en: "Build your order in a few taps", hi: "कुछ टैप में अपना ऑर्डर बनाइए" },
+    body: { en: "Tap the dishes guests rave about, set how many and when. It goes to WhatsApp exactly as you see it.", hi: "मेहमानों की पसंदीदा डिश टैप करें, कितने लोग और कब, चुनें। मैसेज व्हाट्सऐप पर ठीक ऐसे ही जाएगा।" },
+    items: [
+      { en: "Chana Masala", hi: "छोले मसाला" },
+      { en: "Paneer Tikka", hi: "पनीर टिक्का" },
+      { en: "Soya Chaap", hi: "सोया चाप" },
+      { en: "Kadhai Paneer", hi: "कढ़ाई पनीर" },
+      { en: "Paneer Butter Masala", hi: "पनीर बटर मसाला" },
+      { en: "Samosa", hi: "समोसा" },
+      { en: "Noodles", hi: "नूडल्स" },
+      { en: "Manchurian", hi: "मंचूरियन" },
+    ],
+    people: true,
+    when: true,
+    hello: { en: "Hi Shree Siddhi Ji, I'd like:", hi: "नमस्ते श्री सिद्धि जी, मुझे चाहिए:" },
+  },
   waHello: {
     en: "Hi Shree Siddhi Ji Restaurant, I'd like to order. Items: , pickup / dine-in: , time: ",
     hi: "नमस्ते श्री सिद्धि जी रेस्टोरेंट, मुझे ऑर्डर देना है। आइटम: , पिकअप / बैठकर: , समय: ",
   },
-  order: ["feature", "dishes", "reviews", "visit"],
+  order: ["build", "feature", "dishes", "reviews", "visit"],
 };
